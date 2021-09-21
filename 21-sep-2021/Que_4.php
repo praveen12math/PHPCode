@@ -8,3 +8,22 @@ Function findAllPairs(array, num) {
     Return allPairs;
 } -->
 
+<?php
+
+    function pairSum($a, $no){
+      
+        for($i=0;$i<sizeof($a)-1;$i++){
+
+            for($j=$i+1;$j<sizeof($a);$j++){
+
+                if(($a[$i]+$a[$j]) == $no){
+                    
+                    echo "[".$a[$i].",".$a[$j]."] ";
+                }
+            }
+        }
+    }
+
+    pairSum([1,4,8,9,2,5,7,-1, -7, 17],10);
+
+?>
